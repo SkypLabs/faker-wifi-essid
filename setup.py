@@ -5,7 +5,7 @@ from codecs import open as fopen
 from os.path import dirname, abspath, join
 from setuptools import setup, find_packages
 
-from faker_wifi_essid.version import VERSION
+VERSION = "0.1.0"
 
 DIR = dirname(abspath(__file__))
 
@@ -30,7 +30,7 @@ setup(
         'Programming Language :: Python :: 3 :: Only',
         'License :: OSI Approved :: MIT License',
     ],
-    packages = find_packages(),
+    packages = find_packages(exclude=['docs', 'tests', 'tests.*']),
     test_suite = 'test',
     install_requires = [
         'Faker',
