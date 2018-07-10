@@ -4,11 +4,11 @@ from faker.providers import BaseProvider
 
 class WifiESSID(BaseProvider):
     """
-    A provider for Wi-Fi access points.
+    A Faker provider for Wi-Fi ESSIDs.
     """
 
     # Based on https://wigle.net/stats#ssidstats.
-    common_names = (
+    common_essids = (
         '3Com',
         'Airport_Free_WiFi_AENA',
         'AndroidAP',
@@ -52,9 +52,33 @@ class WifiESSID(BaseProvider):
         'Welcome',
     )
 
-    def wifi_essid(self):
+    def common_essid(self):
         """
-        Returns a fake Wi-Fi access point name.
+        Returns a random ESSID from a list of the most
+        commonly used ones.
+        See https://wigle.net/stats#ssidstats.
         """
 
-        return self.random_element(self.common_names)
+        return self.random_element(self.common_essids)
+
+    def upc_default_essid(self):
+        """
+        Generates a random ESSID similar to the default ones
+        used by UPC.
+        See https://deadcode.me/blog/2016/07/01/UPC-UBEE-EVW3226-WPA2-Reversing.html.
+        """
+
+        return "UPC" + str(self.random_number(7, True))
+
+    # List of the different ESSID generators.
+    essid_generators = [
+        common_essid,
+        upc_default_essid,
+    ]
+
+    def wifi_essid(self):
+        """
+        Returns a random fake Wi-Fi essid.
+        """
+
+        return self.random_element(self.essid_generators)(self)
