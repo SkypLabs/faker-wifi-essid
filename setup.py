@@ -24,7 +24,7 @@ setup(
     url = 'https://github.com/SkypLabs/faker-wifi-essid',
     download_url = 'https://github.com/SkypLabs/faker-wifi-essid/archive/v{0}.zip'.format(VERSION),
     classifiers = [
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
         'Topic :: Software Development :: Libraries :: Python Modules',
         'Programming Language :: Python :: 3 :: Only',
