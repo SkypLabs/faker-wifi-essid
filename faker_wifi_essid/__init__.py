@@ -70,8 +70,17 @@ class WifiESSID(BaseProvider):
 
         return "UPC" + str(self.random_number(7, True))
 
+    def bbox_default_essid(self):
+        """
+        Generates a random ESSID similar to the default ones
+        used by Bouygues Telecom's Bbox.
+        """
+
+        return self.hexify("Bbox-^^^^^^", upper=True)
+
     # List of the different ESSID generators.
     essid_generators = [
+        bbox_default_essid,
         common_essid,
         upc_default_essid,
     ]
