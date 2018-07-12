@@ -5,7 +5,7 @@ from codecs import open as fopen
 from os.path import dirname, abspath, join
 from setuptools import setup, find_packages
 
-VERSION = "0.1.0"
+VERSION = "0.2.0"
 
 DIR = dirname(abspath(__file__))
 
