@@ -48,7 +48,12 @@ setup(
         "Programming Language :: Python :: 3.7",
         "License :: OSI Approved :: MIT License",
     ],
-    packages=find_packages(exclude=["docs", "tests", "tests.*"]),
+    packages=find_packages(
+        exclude=[
+            "doc*",
+            "test*",
+        ],
+    ),
     python_requires=">=3.4, <4",
     test_suite="test",
     install_requires=[
