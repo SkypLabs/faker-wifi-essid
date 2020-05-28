@@ -20,5 +20,6 @@ jobs:
       password:
         secure: "N3pzY9TdFXaDFeMyImW2pxGnTBNbUpUboniO1eV+Rs53FFsZ/wjv6SRnh0INL1JAqeJXXWJ0jEP50zlNHnRmHQPU1jj1esIcQnMir1Quxm28XFhCzJaqkV8XQzz2J3OG/bixiyF7mBzBX1/5JHmzEx6iS5kl/FeuRacg62mF4TWYcnSX8ChWTPxXJ9KD08BHyMR5aXjevxqwEP5jnbt70GszpaHki3DW9twDFgcvWwK3Gj5jGWH6Wmij/1TPaH9egRKT2fUu/Q0uh2Nzzi4DrAem+wXhqI1hq2tENt2BjvDchMlQJBRO48caFrWTybxqeKShcbUVVr2eI5bNgRqRSsPEW3vc4v40vz1QkfgdOn/YnKbjwjGcQrCPHv4SA70P34ip8AmxcU6mkHbhUpEHhHyeoI+Ovsq3MxUVbp4PrVmm7v1Ctl84A0kk/lwqweYdWwURiS+Mgb2MnhebUbPUJML01jpBIkznxR8azbeyeItnJ5qzxcFLAHkjovM8obWlV2SDN3+IncwVBh3FtZhx6DTWfFOdDH7kmMzTaU6wp5FMIr62ar6BGVkKDTiEfx0vtcGCguVHaZy3bcaRwwMRPUyePfsR9dP77eSpJKLBOpw+KTKRfEm0lbBtLPPSv8/cZx7TBhOaJswOWALZ/vzR/4KcNW7mc48Sv42lctva9Cc="
       on:
+        branch: master
         tags: true
         repo: SkypLabs/faker-wifi-essid
