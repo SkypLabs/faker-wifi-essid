@@ -1,6 +1,10 @@
 # -*- coding: utf-8 -*-
 
+from pkg_resources import get_distribution
 from faker.providers import BaseProvider
+
+__version__ = get_distribution("faker_wifi_essid").version
+
 
 class WifiESSID(BaseProvider):
     """
