@@ -49,6 +49,7 @@ setup(
         "License :: OSI Approved :: MIT License",
     ],
     packages=find_packages(exclude=["docs", "tests", "tests.*"]),
+    python_requires=">=3.4, <4",
     test_suite="test",
     install_requires=[
         "Faker",
