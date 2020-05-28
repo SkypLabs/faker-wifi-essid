@@ -8,9 +8,13 @@ for Faker Wi-Fi ESSID.
 See https://setuptools.readthedocs.io.
 """
 
+try:
+    from setuptools import setup, find_packages
+except Exception:
+    raise ImportError("Setuptools is required to install Faker Wi-Fi ESSID!")
+
 from codecs import open as fopen
 from os.path import dirname, abspath, join
-from setuptools import setup, find_packages
 
 DIR = dirname(abspath(__file__))
 
