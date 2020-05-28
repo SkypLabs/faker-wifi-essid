@@ -23,3 +23,7 @@ jobs:
         branch: master
         tags: true
         repo: SkypLabs/faker-wifi-essid
+
+notifications:
+  email:
+    on_success: never
