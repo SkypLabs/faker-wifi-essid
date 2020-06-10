@@ -1,6 +1,8 @@
 language: python
 
-script: python setup.py test
+install: pip install tox-travis
+
+script: tox
 
 jobs:
   include:

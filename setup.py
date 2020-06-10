@@ -56,7 +56,6 @@ setup(
         ],
     ),
     python_requires=">=3.4, <4",
-    test_suite="test",
     install_requires=[
         "Faker",
     ],
