@@ -6,6 +6,12 @@
 Welcome to Faker Wi-Fi ESSID's documentation!
 =============================================
 
+Faker Wi-Fi ESSID is a `Faker`_ provider for Wi-Fi ESSIDs.
+
+.. image:: _static/img/faker_wifi_essid_demo.gif
+   :target: https://asciinema.org/a/191287
+   :alt: Faker Wi-Fi ESSID - Demo
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
@@ -18,3 +24,5 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+.. _Faker: https://github.com/joke2k/faker/

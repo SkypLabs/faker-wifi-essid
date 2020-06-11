@@ -6,7 +6,7 @@ Faker Wi-Fi ESSID
 
 `Faker <https://github.com/joke2k/faker/>`__ provider for Wi-Fi ESSIDs.
 
-.. image:: docs/img/faker_wifi_essid_demo.gif
+.. image:: docs/_static/img/faker_wifi_essid_demo.gif
    :target: https://asciinema.org/a/191287
    :alt: Faker Wi-Fi ESSID - Demo
 
