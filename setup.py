@@ -59,4 +59,10 @@ setup(
     install_requires=[
         "Faker",
     ],
+    extras_require={
+        "docs": [
+            "Sphinx ~= 3.1",
+            "sphinx_rtd_theme",
+        ],
+    },
 )
