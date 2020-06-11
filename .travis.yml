@@ -12,6 +12,10 @@ jobs:
     - python: 3.6
     - python: 3.7
     - python: 3.8
+    - stage: "Documentation"
+      python: 3.8
+      install: pip install .[docs]
+      script: cd docs; make html
     - stage: "Deploy"
       name: "Deploy to PyPI"
       python: 3.8
