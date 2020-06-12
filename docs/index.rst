@@ -15,6 +15,8 @@ Faker Wi-Fi ESSID is a `Faker`_ provider for Wi-Fi ESSIDs.
 .. toctree::
    :caption: Contents:
 
+   installation
+   usage
    modules
 
 .. _Faker: https://github.com/joke2k/faker/
