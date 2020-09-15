@@ -56,11 +56,11 @@ setup(
     ),
     python_requires=">=3.4, <4",
     install_requires=[
-        "Faker",
+        "Faker ~= 4.1",
     ],
     extras_require={
         "docs": [
-            "Sphinx ~= 3.1",
+            "Sphinx ~= 3.2",
             "sphinx_rtd_theme",
         ],
     },
