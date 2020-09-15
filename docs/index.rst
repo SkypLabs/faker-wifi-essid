@@ -13,7 +13,7 @@ Faker Wi-Fi ESSID is a `Faker`_ provider for Wi-Fi ESSIDs.
    :alt: Faker Wi-Fi ESSID - Demo
 
 .. toctree::
-   :caption: Contents:
+   :caption: Contents
 
    installation
    usage
