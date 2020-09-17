@@ -6,7 +6,7 @@ Faker Wi-Fi ESSID
 
 `Faker <https://github.com/joke2k/faker/>`__ provider for Wi-Fi ESSIDs.
 
-.. image:: docs/img/faker_wifi_essid_demo.gif
+.. image:: docs/_static/img/faker_wifi_essid_demo.gif
    :target: https://asciinema.org/a/191287
    :alt: Faker Wi-Fi ESSID - Demo
 
@@ -15,13 +15,18 @@ Usage
 
 .. code-block:: python
 
-    from faker import Faker
-    from faker_wifi_essid import WifiESSID
+   # Import Faker.
+   from faker import Faker
+   # Import the WifiESSID class from Faker Wi-Fi ESSID.
+   from faker_wifi_essid import WifiESSID
 
-    fake = Faker()
-    fake.add_provider(WifiESSID)
+   # Create an instance of Faker.
+   fake = Faker()
+   # Add Faker Wi-Fi ESSID to the Faker providers.
+   fake.add_provider(WifiESSID)
 
-    fake.wifi_essid()
+   # Call 'wifi_essid()' to get a random fake Wi-Fi ESSID.
+   fake.wifi_essid()
 
 License
 =======

@@ -42,7 +42,6 @@ setup(
         "Intended Audience :: Developers",
         "Topic :: Software Development :: Libraries :: Python Modules",
         "Programming Language :: Python :: 3 :: Only",
-        "Programming Language :: Python :: 3.4",
         "Programming Language :: Python :: 3.5",
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
@@ -57,6 +56,12 @@ setup(
     ),
     python_requires=">=3.4, <4",
     install_requires=[
-        "Faker",
+        "Faker ~= 4.1",
     ],
+    extras_require={
+        "docs": [
+            "Sphinx ~= 3.2",
+            "sphinx_rtd_theme",
+        ],
+    },
 )
