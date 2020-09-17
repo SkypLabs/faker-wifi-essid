@@ -68,6 +68,6 @@ html_context = {
     'display_github': True,             # Integrate GitHub
     'github_user': 'SkypLabs',          # Username
     'github_repo': 'faker-wifi-essid',  # Repo name
-    'github_version': 'master',         # Version
+    'github_version': 'develop',         # Version
     'conf_py_path': '/docs/',           # Path in the checkout to the docs root
 }
