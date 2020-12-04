@@ -56,7 +56,7 @@ setup(
     ),
     python_requires=">=3.4, <4",
     install_requires=[
-        "Faker ~= 4.1",
+        "Faker >= 4.1,< 6.0",
     ],
     extras_require={
         "docs": [
