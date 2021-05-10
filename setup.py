@@ -62,7 +62,7 @@ setup(
     ],
     extras_require={
         "docs": [
-            "Sphinx ~= 3.2",
+            "Sphinx >= 3.2,< 5.0",
             "sphinx_rtd_theme",
         ],
     },
