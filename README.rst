@@ -2,11 +2,11 @@
 Faker Wi-Fi ESSID
 =================
 
-|PyPI Package| |Build Status| |Code Coverage|
+|PyPI Package| |Build Status|
 
 `Faker <https://github.com/joke2k/faker/>`__ provider for Wi-Fi ESSIDs.
 
-.. image:: docs/img/faker_wifi_essid_demo.gif
+.. image:: docs/_static/img/faker_wifi_essid_demo.gif
    :target: https://asciinema.org/a/191287
    :alt: Faker Wi-Fi ESSID - Demo
 
@@ -15,25 +15,27 @@ Usage
 
 .. code-block:: python
 
-    from faker import Faker
-    from faker_wifi_essid import WifiESSID
+   # Import Faker.
+   from faker import Faker
+   # Import the WifiESSID class from Faker Wi-Fi ESSID.
+   from faker_wifi_essid import WifiESSID
 
-    fake = Faker()
-    fake.add_provider(WifiESSID)
+   # Create an instance of Faker.
+   fake = Faker()
+   # Add Faker Wi-Fi ESSID to the Faker providers.
+   fake.add_provider(WifiESSID)
 
-    fake.wifi_essid()
+   # Call 'wifi_essid()' to get a random fake Wi-Fi ESSID.
+   fake.wifi_essid()
 
 License
 =======
 
 `MIT <https://opensource.org/licenses/MIT>`__
 
-.. |Build Status| image:: https://travis-ci.org/SkypLabs/faker-wifi-essid.svg
-   :target: https://travis-ci.org/SkypLabs/faker-wifi-essid
+.. |Build Status| image:: https://github.com/SkypLabs/faker-wifi-essid/actions/workflows/test.yml/badge.svg?branch=develop
+   :target: https://github.com/SkypLabs/faker-wifi-essid/actions/workflows/test.yml
    :alt: Build Status
-.. |Code Coverage| image:: https://api.codacy.com/project/badge/Grade/81340af8ccae48fea7ecede19a2d8cfa
-   :target: https://www.codacy.com/app/skyper/faker-wifi-essid?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=SkypLabs/faker-wifi-essid&amp;utm_campaign=Badge_Grade
-   :alt: Code Coverage
 .. |PyPI Package| image:: https://badge.fury.io/py/faker-wifi-essid.svg
    :target: https://badge.fury.io/py/faker-wifi-essid
    :alt: PyPI Package
