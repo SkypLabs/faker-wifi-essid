@@ -20,7 +20,7 @@ from os.path import dirname, abspath, join
 
 DIR = dirname(abspath(__file__))
 
-VERSION = "0.2.0"
+VERSION = "0.3.0"
 
 URL = "https://github.com/SkypLabs/faker-wifi-essid"
 DL_URL = URL + "/archive/v{0}.zip"
