@@ -61,9 +61,14 @@ setup(
         "Faker >= 4.1,< 9.0",
     ],
     extras_require={
+        "tests": [
+            "flake8",
+            "pylint",
+            "tox"
+        ],
         "docs": [
-            "Sphinx ~= 3.2",
-            "sphinx_rtd_theme",
+            "Sphinx >= 3.2",
+            "sphinx_rtd_theme >= 0.5.0",
         ],
     },
 )
