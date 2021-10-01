@@ -33,9 +33,10 @@ License
 
 `MIT <https://opensource.org/licenses/MIT>`__
 
-.. |Build Status| image:: https://github.com/SkypLabs/faker-wifi-essid/actions/workflows/test.yml/badge.svg?branch=develop
-   :target: https://github.com/SkypLabs/faker-wifi-essid/actions/workflows/test.yml
+.. |Build Status| image:: https://github.com/SkypLabs/faker-wifi-essid/actions/workflows/test_and_publish.yml/badge.svg?branch=develop
+   :target: https://github.com/SkypLabs/faker-wifi-essid/actions/workflows/test_and_publish.yml?query=branch%3Adevelop
    :alt: Build Status
+
 .. |PyPI Package| image:: https://badge.fury.io/py/faker-wifi-essid.svg
    :target: https://badge.fury.io/py/faker-wifi-essid
    :alt: PyPI Package
