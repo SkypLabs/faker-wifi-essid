@@ -1,15 +1,18 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: 0b70e285e369bcb24b57b74929490ea7be9c4b19 # v2.2.3
+    rev: 8fe62d14e0b4d7d845a7022c5c2c3ae41bdd3f26  # frozen: v4.1.0
     hooks:
       - id: check-ast
       - id: check-executables-have-shebangs
       - id: check-yaml
-      - id: flake8
       - id: trailing-whitespace
-  - repo: https://github.com/pre-commit/mirrors-pylint
-    rev: 59c5533087e77a99a5697b1faac86615f3ce4a10  # frozen: v3.0.0a4
+
+  - repo: https://github.com/pycqa/flake8
+    rev: cbeb4c9c4137cff1568659fcc48e8b85cddd0c8d  # frozen: 4.0.1
+    hooks:
+      - id: flake8
+
+  - repo: https://github.com/pycqa/pylint
+    rev: eec287fae66f8fc514d5daa9caee46fd0e0cb6d9  # frozen: v2.12.2
     hooks:
       - id: pylint
-        entry: python3 -m pylint.__main__
-        language: system
