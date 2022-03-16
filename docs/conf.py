@@ -22,7 +22,7 @@ from pkg_resources import get_distribution
 # -- Project information -----------------------------------------------------
 
 project = 'Faker Wi-Fi ESSID'
-copyright = '2021, Paul-Emmanuel Raoul'
+copyright = '2022, Paul-Emmanuel Raoul'
 author = 'Paul-Emmanuel Raoul'
 
 # The full version, including alpha/beta/rc tags
