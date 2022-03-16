@@ -2,7 +2,7 @@
 Installation
 ============
 
-Using pip (recommended)
+From PyPI (recommended)
 -----------------------
 
 ::
@@ -21,6 +21,6 @@ need to clone the `main` branch.
 
     git clone -b main git@github.com:SkypLabs/faker-wifi-essid.git
     cd faker-wifi-essid
-    python3 setup.py install
+    pip3 install .
 
 .. _Setuptools: https://pypi.org/project/setuptools/
