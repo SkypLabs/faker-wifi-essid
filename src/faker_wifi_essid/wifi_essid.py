@@ -16,8 +16,8 @@ class WifiESSID(BaseProvider):
 
     def common_essid(self):
         """
-        Returns a random ESSID from a list of the most
-        commonly used ones.
+        Returns a random ESSID from a list of the most commonly used ones.
+
         See https://wigle.net/stats#ssidstats.
         """
 
@@ -25,8 +25,8 @@ class WifiESSID(BaseProvider):
 
     def upc_default_essid(self):
         """
-        Generates a random ESSID similar to the default ones
-        used by UPC.
+        Generates a random ESSID similar to the default ones used by UPC.
+
         https://deadcode.me/blog/2016/07/01/UPC-UBEE-EVW3226-WPA2-Reversing.html.
         """
 
@@ -34,8 +34,8 @@ class WifiESSID(BaseProvider):
 
     def bbox_default_essid(self):
         """
-        Generates a random ESSID similar to the default ones
-        used by Bouygues Telecom's Bbox.
+        Generates a random ESSID similar to the default ones used by Bouygues
+        Telecom's Bbox.
         """
 
         return self.hexify("Bbox-^^^^^^", upper=True)

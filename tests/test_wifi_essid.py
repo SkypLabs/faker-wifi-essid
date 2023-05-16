@@ -10,6 +10,7 @@ import re
 import unittest
 
 from faker import Faker
+
 from faker_wifi_essid import WifiESSID
 from faker_wifi_essid.common_essids import COMMON_ESSIDS
 
@@ -25,8 +26,8 @@ class TestWifiESSID(unittest.TestCase):
 
     def test_if_string(self):
         """
-        Tests if the values returned by the fake Wi-Fi ESSID
-        generators are strings.
+        Tests if the values returned by the fake Wi-Fi ESSID generators are
+        strings.
         """
 
         for _ in range(10):
