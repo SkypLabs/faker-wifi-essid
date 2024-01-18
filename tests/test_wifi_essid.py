@@ -42,7 +42,7 @@ class TestWifiESSID(unittest.TestCase):
         """
 
         for _ in range(10):
-            self.assertTrue(self.fake.common_essid() in COMMON_ESSIDS)
+            self.assertIn(self.fake.common_essid(), COMMON_ESSIDS)
 
     def test_upc_default_essid(self):
         """
