@@ -37,7 +37,7 @@ dynamic = ["version"]
 Repository = "https://github.com/SkypLabs/faker-wifi-essid"
 
 [project.optional-dependencies]
-dev = ["isort", "ruff"]
+dev = ["ruff"]
 docs = ["Sphinx >= 3.2", "sphinx_rtd_theme >= 0.5.0"]
 tests = ["tox"]
 
@@ -46,3 +46,7 @@ version = {attr = "faker_wifi_essid.__version__"}
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.ruff.lint]
+# Enable the isort rules.
+extend-select = ["I"]
