@@ -19,13 +19,11 @@ classifiers = [
   "Topic :: Software Development :: Libraries :: Python Modules",
   "Operating System :: OS Independent",
   "Programming Language :: Python :: 3 :: Only",
-  "Programming Language :: Python :: 3.7",
-  "Programming Language :: Python :: 3.8",
   "Programming Language :: Python :: 3.9",
   "Programming Language :: Python :: 3.10",
   "License :: OSI Approved :: MIT License",
 ]
-requires-python = ">=3.7, <4"
+requires-python = ">=3.9, <4"
 dependencies = [
   "Faker >= 4.1,< 20.0",
 ]
