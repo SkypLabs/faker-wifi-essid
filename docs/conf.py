@@ -16,8 +16,7 @@
 
 # pylint: skip-file
 
-from pkg_resources import get_distribution
-
+from faker_wifi_essid import __version__ as VERSION
 
 # -- Project information -----------------------------------------------------
 
@@ -26,7 +25,7 @@ copyright = '2022, Paul-Emmanuel Raoul'
 author = 'Paul-Emmanuel Raoul'
 
 # The full version, including alpha/beta/rc tags
-release = get_distribution("faker_wifi_essid").version
+release = VERSION
 
 
 # -- General configuration ---------------------------------------------------
