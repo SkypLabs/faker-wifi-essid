@@ -15,7 +15,7 @@ To install the dependencies in `docs`:
 
 ::
 
-   pip3 install .[docs]
+   pip install .[docs]
 
 
 Build the documentation
