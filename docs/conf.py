@@ -16,12 +16,14 @@
 
 # pylint: skip-file
 
+from datetime import datetime
+
 from faker_wifi_essid import __version__ as VERSION
 
 # -- Project information -----------------------------------------------------
 
 project = "Faker Wi-Fi ESSID"
-copyright = "2022, Paul-Emmanuel Raoul"
+copyright = f"2018-{datetime.now().year}, Paul-Emmanuel Raoul"
 author = "Paul-Emmanuel Raoul"
 
 # The full version, including alpha/beta/rc tags
