@@ -20,11 +20,11 @@ class TestWifiESSID(unittest.TestCase):
     Unit tests for the 'WifiESSID' class.
     """
 
-    def setUp(self):
+    def setUp(self) -> None:
         self.fake = Faker()
         self.fake.add_provider(WifiESSID)
 
-    def test_if_string(self):
+    def test_if_string(self) -> None:
         """
         Tests if the values returned by the fake Wi-Fi ESSID generators are
         strings.
@@ -36,7 +36,7 @@ class TestWifiESSID(unittest.TestCase):
             self.assertTrue(isinstance(self.fake.bbox_default_essid(), str))
             self.assertTrue(isinstance(self.fake.wifi_essid(), str))
 
-    def test_common_essid(self):
+    def test_common_essid(self) -> None:
         """
         Tests if the 'common_essid()' method returns values from
         'COMMON_ESSIDS' as expected.
@@ -45,7 +45,7 @@ class TestWifiESSID(unittest.TestCase):
         for _ in range(10):
             self.assertIn(self.fake.common_essid(), COMMON_ESSIDS)
 
-    def test_upc_default_essid(self):
+    def test_upc_default_essid(self) -> None:
         """
         Tests if the values returned by the 'upc_default_essid()' method match
         the UPC ESSIDs' regex.
@@ -56,7 +56,7 @@ class TestWifiESSID(unittest.TestCase):
         for _ in range(10):
             self.assertTrue(re.match(regex, self.fake.upc_default_essid()))
 
-    def test_bbox_default_essid(self):
+    def test_bbox_default_essid(self) -> None:
         """
         Tests if the values returned by the 'bbox_default_essid()' method match
         the Bbox ESSIDs' regex.
