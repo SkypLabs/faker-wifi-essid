@@ -43,7 +43,7 @@ class WifiESSID(BaseProvider):
         return self.hexify("Bbox-^^^^^^", upper=True)
 
     # List of the different ESSID generators.
-    essid_generators: list[Callable] = [
+    _essid_generators: list[Callable] = [
         bbox_default_essid,
         common_essid,
         upc_default_essid,
@@ -54,4 +54,4 @@ class WifiESSID(BaseProvider):
         Returns a random fake Wi-Fi essid.
         """
 
-        return self.random_element(self.essid_generators)(self)
+        return self.random_element(self._essid_generators)(self)
