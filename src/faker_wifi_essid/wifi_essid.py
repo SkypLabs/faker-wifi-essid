@@ -4,6 +4,8 @@
 A Faker provider for Wi-Fi ESSIDs.
 """
 
+from collections.abc import Callable
+
 from faker.providers import BaseProvider
 
 from .common_essids import COMMON_ESSIDS
@@ -14,7 +16,7 @@ class WifiESSID(BaseProvider):
     A Faker provider for Wi-Fi ESSIDs.
     """
 
-    def common_essid(self):
+    def common_essid(self) -> str:
         """
         Returns a random ESSID from a list of the most commonly used ones.
 
@@ -23,7 +25,7 @@ class WifiESSID(BaseProvider):
 
         return self.random_element(COMMON_ESSIDS)
 
-    def upc_default_essid(self):
+    def upc_default_essid(self) -> str:
         """
         Generates a random ESSID similar to the default ones used by UPC.
 
@@ -32,7 +34,7 @@ class WifiESSID(BaseProvider):
 
         return "UPC" + str(self.random_number(7, True))
 
-    def bbox_default_essid(self):
+    def bbox_default_essid(self) -> str:
         """
         Generates a random ESSID similar to the default ones used by Bouygues
         Telecom's Bbox.
@@ -41,13 +43,13 @@ class WifiESSID(BaseProvider):
         return self.hexify("Bbox-^^^^^^", upper=True)
 
     # List of the different ESSID generators.
-    essid_generators = [
+    essid_generators: list[Callable] = [
         bbox_default_essid,
         common_essid,
         upc_default_essid,
     ]
 
-    def wifi_essid(self):
+    def wifi_essid(self) -> str:
         """
         Returns a random fake Wi-Fi essid.
         """
