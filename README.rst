@@ -2,8 +2,7 @@
 Faker Wi-Fi ESSID
 =================
 
-|PyPI Package| |PyPI Downloads| |PyPI Python Versions| |Build Status| |LGTM
-Grade| |LGTM Alerts|
+|PyPI Package| |PyPI Downloads| |PyPI Python Versions| |Build Status|
 
 `Faker <https://github.com/joke2k/faker/>`__ provider for Wi-Fi ESSIDs.
 
@@ -32,19 +31,11 @@ Usage
 License
 =======
 
-`MIT <https://opensource.org/licenses/MIT>`__
+This project is `MIT <https://opensource.org/license/MIT>`__ licensed.
 
 .. |Build Status| image:: https://github.com/SkypLabs/faker-wifi-essid/actions/workflows/test_and_publish.yml/badge.svg?branch=develop
    :target: https://github.com/SkypLabs/faker-wifi-essid/actions/workflows/test_and_publish.yml?query=branch%3Adevelop
    :alt: Build Status
-
-.. |LGTM Alerts| image:: https://img.shields.io/lgtm/alerts/g/SkypLabs/faker-wifi-essid.svg?logo=lgtm&logoWidth=18
-   :target: https://lgtm.com/projects/g/SkypLabs/fake-wifi-essid/alerts/
-   :alt: LGTM Alerts
-
-.. |LGTM Grade| image:: https://img.shields.io/lgtm/grade/python/g/SkypLabs/faker-wifi-essid.svg?logo=lgtm&logoWidth=18
-   :target: https://lgtm.com/projects/g/SkypLabs/faker-wifi-essid/context:python
-   :alt: LGTM Grade
 
 .. |PyPI Downloads| image:: https://img.shields.io/pypi/dm/faker-wifi-essid.svg?style=flat
    :target: https://pypi.org/project/faker-wifi-essid/
