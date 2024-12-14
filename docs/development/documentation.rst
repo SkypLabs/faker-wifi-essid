@@ -8,14 +8,14 @@ folder.
 Install the dependencies
 ------------------------
 
-The dependencies required to build the documentation are defined in `setup.py`
-as an optional dependency group called `docs`.
+The dependencies required to build the documentation are defined in
+`pyproject.toml` as an optional dependency group called `docs`.
 
 To install the dependencies in `docs`:
 
 ::
 
-   pip3 install .[docs]
+   pip install .[docs]
 
 
 Build the documentation

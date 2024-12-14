@@ -61,5 +61,10 @@ target/
 # Output files
 *.csv
 
-# Others
-*.swp
+# Text editors
+*~
+*.sw[nop]
+
+# Virtual environments
+venv/
+.venv/
