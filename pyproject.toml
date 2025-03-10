@@ -28,7 +28,7 @@ classifiers = [
 ]
 requires-python = ">=3.9, <4"
 dependencies = [
-  "Faker >= 4.1,< 36.0",
+  "Faker >= 4.1,< 38.0",
 ]
 dynamic = ["version"]
 
